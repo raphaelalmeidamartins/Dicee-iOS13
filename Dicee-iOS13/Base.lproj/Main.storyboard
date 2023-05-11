@@ -44,7 +44,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="handleRollButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ha-mx-qsh"/>
+                                    <action selector="handleRollButtonPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ha-mx-qsh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,8 +52,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="diceImageView1" destination="Idz-mg-tn5" id="Rxn-bK-X2o"/>
-                        <outlet property="diceImageView2" destination="ycY-5V-yVv" id="zIu-fi-SBh"/>
+                        <outlet property="diceImageView1Outlet" destination="Idz-mg-tn5" id="Rxn-bK-X2o"/>
+                        <outlet property="diceImageView2Outlet" destination="ycY-5V-yVv" id="zIu-fi-SBh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
