@@ -24,16 +24,9 @@ class ViewController: UIViewController {
         UIImage(imageLiteralResourceName: "DiceSix"),
     ];
 
-    override func viewDidLoad() {
-        super.viewDidLoad();
-        // Do any additional setup after loading the view.
-        diceImageView1Outlet.image = diceSideImageLiterals[leftDiceImageIndex];
-        diceImageView2Outlet.image = diceSideImageLiterals[rightDiceImageIndex];
-    }
-
     @IBAction func handleRollButtonPressAction(_ sender: UIButton) {
-        leftDiceImageIndex += 1;
-        rightDiceImageIndex -= 1;
+        leftDiceImageIndex = Int.random(in: 0...5);
+        rightDiceImageIndex = Int.random(in: 0...5);
 
         diceImageView1Outlet.image = diceSideImageLiterals[leftDiceImageIndex];
         diceImageView2Outlet.image = diceSideImageLiterals[rightDiceImageIndex];
