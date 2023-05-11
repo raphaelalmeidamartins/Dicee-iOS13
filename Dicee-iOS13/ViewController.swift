@@ -19,5 +19,9 @@ class ViewController: UIViewController {
         diceImageView1.image = UIImage(imageLiteralResourceName: "DiceSix");
         diceImageView2.image = UIImage(imageLiteralResourceName: "DiceTwo");
     }
-}
 
+    @IBAction func handleRollButtonPress(_ sender: UIButton) {
+        diceImageView1.image = UIImage(imageLiteralResourceName: "DiceFour");
+        diceImageView2.image = UIImage(imageLiteralResourceName: "DiceFour");
+    }
+}
